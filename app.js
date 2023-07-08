@@ -1,22 +1,10 @@
-let a = 5;
-let b = 5.6;
-console.log(typeof a); // number
-console.log(typeof b); // number
+// task 1
+let customersPotencialJobInHours = 40;
+let mySalaryPerHour = 150;
+let myJobHoursPerDay = 5;
+let myLeftWorkingDays = 8;
+let myLeftWorkingHours = myJobHoursPerDay * myLeftWorkingDays;
+let myTotalSalary = mySalaryPerHour * customersPotencialJobInHours;
 
-a = "String";
-console.log(typeof a); // string
-
-let isAdmin = false;
-console.log(typeof isAdmin); // boolean
-
-let x;
-console.log(typeof x); // undefined
-x = 55;
-console.log(typeof x); // number
-
-let cb = null;
-console.log(typeof cb); // object
-
-let fg = null;
-console.log(typeof (fg == null)); // boolean, because step 1 - check in brackets, step 2 - check type
-console.log(typeof fg == null); // boolean, because step 1 - check in brackets, step 2 - check type
+console.log("Can I work? - " + (myLeftWorkingHours >= customersPotencialJobInHours));
+console.log("My total salary is - USD " + myTotalSalary);
